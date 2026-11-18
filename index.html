@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Baixe o app Condlink</title>
+<style>
+  :root { --verde:#2e8c5a; --texto:#1e1e1e; --cinza:#6e6e6e; --fundo:#ffffff; }
+  @media (prefers-color-scheme: dark) { :root { --texto:#f0f0f0; --cinza:#b0b0b0; --fundo:#141414; } }
+  body { margin:0; background:var(--fundo); color:var(--texto); font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; text-align:center; }
+  header { background:var(--verde); color:#fff; padding:20px 16px; font-weight:700; font-size:24px; letter-spacing:1px; }
+  main { padding:28px 16px; max-width:420px; margin:0 auto; }
+  h1 { font-size:22px; margin:0 0 8px; }
+  p { color:var(--cinza); margin:0 0 24px; }
+  a.btn { display:block; padding:16px; margin:12px 0; border-radius:12px; background:var(--verde); color:#fff; text-decoration:none; font-size:18px; font-weight:600; }
+</style>
+<script>
+  (function () {
+    var IOS = "https://apps.apple.com/br/app/condlink/id1002590870";
+    var ANDROID = "https://play.google.com/store/apps/details?id=mobile.condlink.com.br";
+    var ua = navigator.userAgent || "";
+    var ipadOS = /Macintosh/.test(ua) && navigator.maxTouchPoints > 1;
+    if (/iPhone|iPad|iPod/i.test(ua) || ipadOS) { location.replace(IOS); }
+    else if (/Android/i.test(ua)) { location.replace(ANDROID); }
+  })();
+</script>
+</head>
+<body>
+<header>CONDLINK</header>
+<main>
+  <h1>Baixe o aplicativo Condlink</h1>
+  <p>Escolha a loja do seu celular:</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=mobile.condlink.com.br">Android – Google Play</a>
+  <a class="btn" href="https://apps.apple.com/br/app/condlink/id1002590870">iPhone – App Store</a>
+</main>
+</body>
+</html>
